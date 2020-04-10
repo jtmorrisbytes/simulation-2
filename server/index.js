@@ -41,6 +41,7 @@ if (/^test/.test(NODE_ENV)) {
   }
   massive(DATABASE_URL)
     .then((db) => {
+      app.set("db", db);
       app.listen(SERVER_PORT, SERVER_HOST, () => {
         console.log(`SERVER LISTENING on ${SERVER_HOST}:${SERVER_PORT}`);
       });
