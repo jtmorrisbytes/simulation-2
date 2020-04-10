@@ -1,10 +1,10 @@
 // do processing here
-const controller = require("../../controllers/template");
+const controller = require("../../controllers/property");
 const router = require("express").Router();
 
 router.get("/", controller.getAll);
 
 module.exports = {
-  basePath: "/template",
+  basePath: "/property",
   router,
 };
