@@ -1,0 +1,38 @@
+@import "../../palette.scss";
+.Wizard {
+  .header-container {
+    justify-content: space-around;
+    h3 {
+      font-weight: bold;
+      justify-self: flex-start;
+      display: inline-block;
+      width: 90%;
+    }
+    button {
+      margin-left: auto;
+      // float: right;
+      border: none;
+      background-color: $color-warning-button;
+    }
+  }
+  .container {
+    width: 70%;
+    margin: 0 auto;
+    .inline {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      input {
+        width: 100%;
+      }
+      .state {
+        width: 20%;
+      }
+      .zip {
+        width: 15%;
+      }
+    }
+    .inline > * {
+    }
+  }
+}
