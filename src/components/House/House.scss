@@ -1,0 +1,11 @@
+@import "../../palette.scss";
+.House {
+  background-color: $color-card-content;
+  padding: 10px;
+  .delete {
+    float: right;
+  }
+  div {
+    margin-bottom: 5px;
+  }
+}

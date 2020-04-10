@@ -1,0 +1,33 @@
+@import "../../palette.scss";
+.Dashboard {
+  .header-container {
+    // padding-bottom: 20px;
+    height: 60px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    span {
+      font-size: xx-large;
+      color: $color-pop-text;
+    }
+    a,
+    button {
+      margin-top: 5px;
+      float: right;
+      // position: relative;
+      // left: 50%;
+      font-weight: bold;
+      background: $color-action-button;
+      border: none;
+      padding: 0.25em 0.75em;
+    }
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-left: 20px;
+    font-weight: bold;
+  }
+}
