@@ -1,0 +1,11 @@
+@import url("//fonts.googleapis.com/css?family=Open+Sans");
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+@import "./grid.scss";
+.App {
+}
+.App > main {
+  max-width: $content-width;
+}

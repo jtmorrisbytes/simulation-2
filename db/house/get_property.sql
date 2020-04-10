@@ -1,0 +1,1 @@
+SELECT * FROM property where property_id = $1;

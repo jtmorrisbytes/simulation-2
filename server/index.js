@@ -4,7 +4,12 @@ const path = require("path");
 const morgan = require("morgan");
 const app = express();
 const massive = require("massive");
-let { SERVER_HOST, SERVER_PORT, DATABASE_URL, NODE_ENV } = process.env;
+let { SERVER_HOST, SERVER_PORT } = process.env;
+const {
+  DATABASE_URL,
+  NODE_ENV,
+  // SESSION_SECRET,
+} = process.env;
 
 SERVER_HOST = SERVER_HOST || "127.0.0.1";
 
