@@ -7,9 +7,13 @@ class Dashboard extends Component {
   }
   render() {
     return (
-      <div className="Dashboard">
+      <main className="Dashboard">
+        <div className="header-container">
+          <span>Dashboard</span>
+          <button></button>
+        </div>
         <House />
-      </div>
+      </main>
     );
   }
 }

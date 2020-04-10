@@ -4,8 +4,16 @@
 }
 
 @import "./grid.scss";
+@import "./palette.scss";
 .App {
+  background-color: $color-app-background;
+  min-height: 100vh;
 }
 .App > main {
+  width: 100%;
   max-width: $content-width;
+  padding: 1em;
+  margin: 0 auto;
+  background-color: $color-app-content;
+  min-height: 100vh;
 }
