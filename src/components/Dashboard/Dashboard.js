@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import House from "../House/House";
 import "./Dashboard.scss";
 import Axios from "axios";
+import { Link } from "react-router-dom";
 class Dashboard extends Component {
   constructor(props) {
     super(props);
@@ -28,7 +29,7 @@ class Dashboard extends Component {
     return display;
   }
   getAllProperties() {
-    Axios.get("/api/properties")
+    Axios.get("/api/property")
       .then((res) => {
         if (res.data.length) {
           this.setState({
@@ -48,7 +49,7 @@ class Dashboard extends Component {
       <main className="Dashboard">
         <div className="header-container">
           <span>Dashboard</span>
-          <button>Add new Property</button>
+          <Link to="/wizard">Add new Property</Link>
         </div>
         <h6>Home Listings</h6>
         {this.state.properties}
